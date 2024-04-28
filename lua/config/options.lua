@@ -4,4 +4,4 @@
 
 local opt = vim.opt
 
-opt.scrolloff = 10
+opt.scrolloff = 12
