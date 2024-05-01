@@ -8,3 +8,4 @@ vim.keymap.set({ "i", "c" }, "<M-BS>", "<C-W>", { noremap = true, desc = "Delete
 vim.keymap.set("i", "<S-Tab>", "<C-d>", { noremap = true, desc = "De-indent" })
 vim.keymap.set("v", "<leader>y", '"+y', { noremap = true, desc = "Yank to clipboard" })
 vim.keymap.set({ "n", "v" }, "<leader>sj", "<cmd>Telescope jumplist<cr>", { desc = "Jumplist" })
+vim.keymap.set({ "n", "v" }, "<leader>su", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor" })
