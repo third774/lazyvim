@@ -1,0 +1,1 @@
+- Disable snippets while writing comments
