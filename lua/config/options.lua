@@ -4,5 +4,5 @@
 
 local opt = vim.opt
 
-opt.scrolloff = 12
+opt.scrolloff = 10
 opt.clipboard = ""
