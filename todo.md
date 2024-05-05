@@ -1,3 +1,4 @@
 - Disable snippets while writing comments
+- New line after comment should not also be comment
 - Add keybinding for opening Raycast quicklinks passing highlighted text as argument
 - Fix "esc + j" and "esc + k" moving lines
