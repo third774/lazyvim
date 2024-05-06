@@ -1,1 +1,2 @@
 - Add keybinding for opening Raycast quicklinks passing highlighted text as argument
+- Make unused variables dimmed?
