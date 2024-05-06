@@ -10,3 +10,11 @@ vim.keymap.set("v", "<leader>y", '"+y', { noremap = true, desc = "Yank to clipbo
 vim.keymap.set({ "n", "v" }, "<leader>bs", "<cmd>w<cr>", { noremap = true, desc = "Save buffer" })
 vim.keymap.set({ "n", "v" }, "<leader>sj", "<cmd>Telescope jumplist<cr>", { desc = "Jumplist" })
 vim.keymap.set({ "n", "v" }, "<leader>su", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor" })
+
+-- https://github.com/LunarVim/LunarVim/issues/1857
+vim.keymap.del("i", "<A-j>")
+vim.keymap.del("i", "<A-k>")
+vim.keymap.del("n", "<A-j>")
+vim.keymap.del("n", "<A-k>")
+vim.keymap.del("v", "<A-j>")
+vim.keymap.del("v", "<A-k>")
