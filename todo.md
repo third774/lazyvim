@@ -1,2 +1,3 @@
 - Add keybinding for opening Raycast quicklinks passing highlighted text as argument
 - Make unused variables dimmed?
+- Go to definition showing react type defs on FunctionComponents
