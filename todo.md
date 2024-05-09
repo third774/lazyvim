@@ -1,1 +1,2 @@
 - Add keybinding for opening Raycast quicklinks passing highlighted text as argument
+- Telescope find files including hidden/ignored files
