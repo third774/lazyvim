@@ -1,2 +1,3 @@
 - Add keybinding for opening Raycast quicklinks passing highlighted text as argument
 - Telescope find files including hidden/ignored files
+- Disable snippets when creating new files in neo-tree
