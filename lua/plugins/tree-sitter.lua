@@ -1,7 +1,7 @@
 vim.filetype.add({
   extension = {
-    mdx = 'markdown'
-  }
+    mdx = "markdown",
+  },
 })
 
 return {
@@ -20,6 +20,16 @@ return {
       "tsx",
       "typescript",
       "vim",
-      "yaml", },
+      "yaml",
+    },
+    incremental_selection = {
+      enable = true,
+      keymaps = {
+        init_selection = false,
+        node_incremental = "v",
+        scope_incremental = false,
+        node_decremental = "<bs>",
+      },
+    },
   },
 }
