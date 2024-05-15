@@ -7,6 +7,15 @@ vim.filetype.add({
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
+    highlight = {
+      enable = true,
+      disable = function(_, bufnr)
+        -- Disable highlights for help pages
+        if vim.api.nvim_buf_get_option(bufnr, "filetype") == "help" then
+          return true
+        end
+      end,
+    },
     ensure_installed = {
       "astro",
       "bash",
