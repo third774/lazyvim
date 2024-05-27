@@ -10,6 +10,14 @@ return {
         end,
         desc = "Flash Treesitter",
       },
+      {
+        "<S-r>",
+        mode = "o",
+        function()
+          require("flash").remote()
+        end,
+        desc = "Remote Flash",
+      },
     }
   end,
 }
