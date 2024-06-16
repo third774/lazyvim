@@ -25,6 +25,7 @@ return {
       "lua",
       "markdown",
       "markdown_inline",
+      "svelte",
       "regex",
       "tsx",
       "typescript",
