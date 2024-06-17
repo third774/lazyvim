@@ -4,7 +4,7 @@ return {
     ensure_installed = {
       "astro-language-server",
       "prettier",
-      "svelte",
+      "svelte-language-server",
       "typescript-language-server",
     },
   },
