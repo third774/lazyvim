@@ -3,6 +3,14 @@ return {
   keys = function()
     return {
       {
+        "<leader>j",
+        mode = { "n" },
+        function()
+          require("flash").jump()
+        end,
+        desc = "Jump",
+      },
+      {
         "<leader>v",
         mode = { "n", "x", "o", "v" },
         function()
