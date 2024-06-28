@@ -3,8 +3,9 @@ return {
   opts = {
     ensure_installed = {
       "astro-language-server",
-      "typescript-language-server",
       "prettier",
+      "terraform-ls",
+      "typescript-language-server",
     },
   },
 }
