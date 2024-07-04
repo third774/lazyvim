@@ -17,6 +17,12 @@ return {
       }),
       -- https://github.com/hrsh7th/nvim-cmp/wiki/Advanced-techniques#disabling-completion-in-certain-contexts-such-as-comments
       enabled = function()
+        -- Disable completion in prompts
+        local buftype = vim.bo.buftype
+        if buftype == "prompt" then
+          return false
+        end
+
         -- disable completion in comments
         local context = require("cmp.config.context")
         -- keep command mode completion enabled when cursor is in a comment
