@@ -2,6 +2,7 @@ vim.filetype.add({
   extension = {
     mdx = "markdown",
     tf = "terraform",
+    astro = "astro",
   },
 })
 
