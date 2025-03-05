@@ -2,7 +2,8 @@
   "extras": [
     "lazyvim.plugins.extras.editor.aerial",
     "lazyvim.plugins.extras.editor.harpoon2",
-    "lazyvim.plugins.extras.formatting.prettier"
+    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.vscode"
   ],
   "news": {
     "NEWS.md": "10960"

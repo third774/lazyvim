@@ -1,5 +1,14 @@
 -- stylua: ignore
-local logo = [==[
+return {
+  "snacks.nvim",
+  opts = {
+    scroll = { enabled = false },
+    dashboard = {
+      preset = {
+        pick = function(cmd, opts)
+          return LazyVim.pick(cmd, opts)()
+        end,
+        header = [[
                 ..:..                   .-+*##+:. .=*##*=:.                  ..::..                 
               :++++*++-              :++==+***####%##**++=++-.             .++*+++*=.               
              -#*:. .=%*:          .++:.:-=+++##%%%%%#*++=+:..-+.           **+.  .+#+.              
@@ -12,15 +21,8 @@ local logo = [==[
                   .=#%%######*****#%%%%#+.               =##%%%##***########%#*:                    
                      .:=*##%%%%%%#*+=:.                     .-+*#%%%%%%%#*+=.                       
                             ...                                    ....                             
-]==]
-
-logo = string.rep("\n", 8) .. logo .. "\n\n"
-
-return {
-  "nvimdev/dashboard-nvim",
-  opts = {
-    config = {
-      header = vim.split(logo, "\n"),
+ ]],
+      },
     },
   },
 }
