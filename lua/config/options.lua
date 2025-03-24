@@ -6,3 +6,5 @@ local opt = vim.opt
 
 opt.scrolloff = 10
 opt.clipboard = ""
+
+vim.g.root_spec = { "cwd" }
