@@ -1,8 +1,9 @@
 vim.filetype.add({
   extension = {
-    mdx = "markdown",
-    tf = "terraform",
     astro = "astro",
+    mdx = "markdown",
+    prisma = "prisma",
+    tf = "terraform",
   },
 })
 
@@ -27,6 +28,7 @@ return {
       "lua",
       "markdown",
       "markdown_inline",
+      "prisma",
       "regex",
       "tsx",
       "typescript",
