@@ -5,8 +5,7 @@
     "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.editor.mini-files",
     "lazyvim.plugins.extras.formatting.prettier",
-    "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.vscode"
+    "lazyvim.plugins.extras.util.dot"
   ],
   "news": {
     "NEWS.md": "10960"
