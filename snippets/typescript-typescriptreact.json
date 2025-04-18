@@ -1,0 +1,6 @@
+{
+  "interface": {
+    "prefix": "inter",
+    "body": ["interface $1 {", "  $2", "}"]
+  }
+}
