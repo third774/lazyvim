@@ -11,7 +11,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     highlight = {
-      enable = true,
+      enable = false,
       disable = function(_, bufnr)
         -- Disable highlights for help pages
         if vim.api.nvim_buf_get_option(bufnr, "filetype") == "help" then
