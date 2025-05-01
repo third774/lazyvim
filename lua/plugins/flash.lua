@@ -1,5 +1,14 @@
 return {
   "folke/flash.nvim",
+  opts = {
+    label = {
+      rainbow = {
+        enabled = true,
+        -- number between 1 and 9
+        shade = 3,
+      },
+    },
+  },
   keys = function()
     return {
       {
