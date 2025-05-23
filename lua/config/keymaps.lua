@@ -14,6 +14,7 @@ vim.keymap.set({ "v" }, "<leader>/", "<cmd>FzfLua grep_visual<cr>", { desc = "Fi
 vim.keymap.set({ "n", "v" }, "<leader>su", "<cmd>FzfLua grep_visual<cr>", { desc = "Find string under cursor" })
 vim.keymap.set({ "n", "v" }, "<leader>cL", "<cmd>LspRestart<cr>", { desc = "Restart Language Server" })
 vim.keymap.set("i", "<M-_>", "—", { desc = "Insert Em Dash" })
+vim.keymap.set("i", "<M-->", "–", { desc = "Insert En Dash" })
 
 -- https://github.com/LunarVim/LunarVim/issues/1857
 vim.keymap.del("i", "<A-j>")
