@@ -10,10 +10,10 @@
 -- end, { desc = 'Toggle dark and light color scheme' })
 
 return {
-  -- 'kepano/flexoki-neovim',
-  -- priority = 1000,
-  -- lazy = false,
-  -- config = function()
-  --   vim.cmd 'colorscheme flexoki-dark'
-  -- end,
+  "kepano/flexoki-neovim",
+  priority = 1000,
+  lazy = false,
+  config = function()
+    -- vim.cmd("colorscheme flexoki-dark")
+  end,
 }
