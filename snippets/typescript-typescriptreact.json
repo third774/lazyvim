@@ -6,5 +6,9 @@
   "@ts-expect-error": {
     "prefix": "tsee",
     "body": ["@ts-expect-error"]
+  },
+  "effect function": {
+    "prefix": "eff",
+    "body": ["Effect.gen(function*() {", "  $2", "})"]
   }
 }
