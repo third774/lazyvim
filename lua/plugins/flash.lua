@@ -8,6 +8,9 @@ return {
         shade = 3,
       },
     },
+    jump = {
+      register = true,
+    },
   },
   keys = function()
     return {
