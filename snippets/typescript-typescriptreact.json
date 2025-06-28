@@ -20,5 +20,9 @@
     "body": [
       "class ${1:CustomEffectError} extends Data.TaggedError(\"$1\")<{}> {}"
     ]
+  },
+  "filename": {
+    "prefix": "fn",
+    "body": ["${TM_FILENAME/^([^.]+).*/$1/}"]
   }
 }
