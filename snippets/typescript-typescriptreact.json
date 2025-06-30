@@ -9,17 +9,28 @@
   },
   "effect generator": {
     "prefix": "efg",
-    "body": ["Effect.gen(function*() {", "  $2", "})"]
+    "body": ["Effect.gen(function* () {", "  $2", "})"]
   },
   "effect function": {
     "prefix": "eff",
-    "body": ["Effect.fn(($1) => {", "  $2", "})"]
+    "body": ["Effect.fn(\"$1\")(function* ($2) {", "  $3", "})"]
   },
   "effect error": {
     "prefix": "efe",
     "body": [
-      "class ${1:CustomEffectError} extends Data.TaggedError(\"$1\")<{}> {}"
+      "export class ${1:CustomEffectError} extends Data.TaggedError(\"$1\")<{",
+      "  cause?: unknown;",
+      "  message?: string;",
+      "}> {}"
     ]
+  },
+  "effect log": {
+    "prefix": "efc",
+    "body": ["yield* Console.log($1)"]
+  },
+  "yield*": {
+    "prefix": "ys",
+    "body": ["yield* "]
   },
   "filename": {
     "prefix": "fn",
