@@ -3,6 +3,10 @@
     "prefix": "inter",
     "body": ["interface $1 {", "  $2", "}"]
   },
+  "localize": {
+    "prefix": "localize",
+    "body": ["\\$localize`$2`"]
+  },
   "@ts-expect-error": {
     "prefix": "tsee",
     "body": ["@ts-expect-error"]
