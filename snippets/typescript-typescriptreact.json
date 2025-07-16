@@ -4,7 +4,7 @@
     "body": ["interface $1 {", "  $2", "}"]
   },
   "localize": {
-    "prefix": "localize",
+    "prefix": "lz",
     "body": ["\\$localize`$2`"]
   },
   "@ts-expect-error": {
