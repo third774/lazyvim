@@ -39,5 +39,32 @@
   "filename": {
     "prefix": "fn",
     "body": ["${TM_FILENAME/^([^.]+).*/$1/}"]
+  },
+  "React Router Action": {
+    "prefix": "rra",
+    "body": [
+      "export const action = async ({$1}: Route.ActionArgs) => {",
+      "  $2",
+      "}"
+    ]
+  },
+  "React Router Loader": {
+    "prefix": "rrl",
+    "body": [
+      "export const loader = async ({$1}: Route.LoaderArgs) => {",
+      "  $2",
+      "}"
+    ]
+  },
+  "React Router Component": {
+    "prefix": "rrc",
+    "body": [
+      "export default function ${1:Component}({$2}: Route.ComponentProps) {",
+      "  $3",
+      "  return (",
+      "    <div>$1</div>",
+      "  );",
+      "}"
+    ]
   }
 }
