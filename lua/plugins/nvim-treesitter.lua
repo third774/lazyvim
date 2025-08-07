@@ -22,6 +22,7 @@ return {
     ensure_installed = {
       "astro",
       "bash",
+      "graphql",
       "html",
       "javascript",
       "json",

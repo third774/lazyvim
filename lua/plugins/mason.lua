@@ -5,6 +5,7 @@ return {
       "astro-language-server",
       "emmet-language-server",
       "eslint-lsp",
+      "graphql-language-service-cli",
       "prettier",
       "terraform-ls",
       "typescript-language-server",
