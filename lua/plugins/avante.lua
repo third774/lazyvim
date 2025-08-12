@@ -13,7 +13,7 @@ return {
   },
   opts = {
     behaviour = {
-      auto_set_keymaps = true,
+      auto_set_keymaps = false,
       auto_suggestions = true,
     },
     hints = { enabled = false },
