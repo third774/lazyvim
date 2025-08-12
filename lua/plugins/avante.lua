@@ -25,13 +25,15 @@ return {
         dismiss = "<C-]>",
       },
     },
-    claude = {
-      endpoint = "https://gateway.ai.cloudflare.com/v1/7bd7982d109d0254631aa233a8703e0a/claude-code/anthropic",
-      model = "claude-3-5-haiku-20241022",
-      timeout = 30000, -- Timeout in milliseconds
-      extra_request_body = {
-        temperature = 0.75,
-        max_tokens = 20480,
+    providers = {
+      claude = {
+        endpoint = "https://gateway.ai.cloudflare.com/v1/7bd7982d109d0254631aa233a8703e0a/claude-code/anthropic",
+        model = "claude-3-5-haiku-20241022",
+        timeout = 30000, -- Timeout in milliseconds
+        extra_request_body = {
+          temperature = 0.75,
+          max_tokens = 20480,
+        },
       },
     },
   },
