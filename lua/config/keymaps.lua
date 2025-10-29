@@ -13,8 +13,12 @@ vim.keymap.set({ "n", "v" }, "<leader>sj", "<cmd>FzfLua jumps<cr>", { desc = "Ju
 vim.keymap.set({ "v" }, "<leader>/", "<cmd>FzfLua grep_visual<cr>", { desc = "Find string under cursor" })
 vim.keymap.set({ "n", "v" }, "<leader>su", "<cmd>FzfLua grep_visual<cr>", { desc = "Find string under cursor" })
 vim.keymap.set({ "n", "v" }, "<leader>cL", "<cmd>LspRestart<cr>", { desc = "Restart Language Server" })
-vim.keymap.set("i", "<M-_>", "—", { desc = "Insert Em Dash" })
 vim.keymap.set("i", "<M-->", "–", { desc = "Insert En Dash" })
+vim.keymap.set("i", "<M-_>", "—", { desc = "Insert Em Dash" })
+
+-- For use with vtsls
+-- vim.keymap.set("n", "<leader>co", "<cmd>VtsExec organize_imports<CR>", { desc = "Organize Imports" })
+-- vim.keymap.set("n", "<leader>cx", "<cmd>VtsExec fix_all<CR>", { desc = "Fix All" })
 
 -- https://github.com/LunarVim/LunarVim/issues/1857
 vim.keymap.del("i", "<A-j>")
