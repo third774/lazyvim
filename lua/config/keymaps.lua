@@ -16,6 +16,18 @@ vim.keymap.set({ "n", "v" }, "<leader>cL", "<cmd>LspRestart<cr>", { desc = "Rest
 vim.keymap.set("i", "<M-->", "–", { desc = "Insert En Dash" })
 vim.keymap.set("i", "<M-_>", "—", { desc = "Insert Em Dash" })
 
+-- Move lines up/down in visual mode
+vim.keymap.set("v", "<M-Up>", ":m '<-2<CR>gv=gv", { desc = "Move lines up" })
+vim.keymap.set("v", "<M-Down>", ":m '>+1<CR>gv=gv", { desc = "Move lines down" })
+
+-- Optional: Also add for normal mode (moves current line)
+vim.keymap.set("n", "<M-Up>", ":m .-2<CR>==", { desc = "Move line up" })
+vim.keymap.set("n", "<M-Down>", ":m .+1<CR>==", { desc = "Move line down" })
+
+-- Optional: Also add for insert mode
+vim.keymap.set("i", "<M-Up>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up" })
+vim.keymap.set("i", "<M-Down>", "<Esc>:m .+1<CR>==gi", { desc = "Move line down" })
+
 -- For use with vtsls
 -- vim.keymap.set("n", "<leader>co", "<cmd>VtsExec organize_imports<CR>", { desc = "Organize Imports" })
 -- vim.keymap.set("n", "<leader>cx", "<cmd>VtsExec fix_all<CR>", { desc = "Fix All" })
