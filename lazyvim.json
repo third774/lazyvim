@@ -4,10 +4,11 @@
     "lazyvim.plugins.extras.editor.aerial",
     "lazyvim.plugins.extras.editor.mini-files",
     "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.util.dot"
   ],
   "news": {
-    "NEWS.md": "10960"
+    "NEWS.md": "11866"
   },
   "version": 8
 }
